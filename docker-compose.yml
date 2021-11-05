@@ -1,6 +1,6 @@
 services:
   reviews:
     build: .
-    image: ghcr.io/62130500119/bookinfo-reviews:dev
+    image: ghcr.io/62130500119/bookinfo-reviews:prd
     ports:
       - "8082:8082"
