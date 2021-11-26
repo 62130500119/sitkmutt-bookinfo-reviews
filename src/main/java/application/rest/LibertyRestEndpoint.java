@@ -129,7 +129,7 @@ public class LibertyRestEndpoint extends Application {
     public Response bookReviewsById(@PathParam("productId") int productId, @Context HttpHeaders requestHeaders) {
       int starsReviewer1 = -1;
       int starsReviewer2 = -1;
-
+      
       if (ratings_enabled) {
         JsonObject ratingsResponse = getRatings(Integer.toString(productId), requestHeaders);
         if (ratingsResponse != null) {
